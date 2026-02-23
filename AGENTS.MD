@@ -87,6 +87,12 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Use only when you need persistence/interaction (debugger/server).
 - Quick refs: `tmux new -d -s shell`, `tmux attach -t shell`, `tmux list-sessions`, `tmux kill-session -t shell`.
 
+## Human-Facing Text
+- Blogs, websites, work docs, emails, any public/reader-facing prose: run through **humanizer** skill (`~/.claude/skills/humanizer/SKILL.md`).
+- Strip AI patterns (significance inflation, -ing analyses, em dash overuse, sycophancy, filler, hedging, emoji, bold-header lists, curly quotes, generic conclusions).
+- Two-pass: draft rewrite → "what's still obviously AI?" audit → final version.
+- Preserve meaning + tone; add voice/personality; vary rhythm.
+
 <frontend_aesthetics>
 Avoid "AI slop" UI. Be opinionated + distinctive.
 
