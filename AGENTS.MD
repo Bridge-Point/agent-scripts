@@ -90,7 +90,8 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Quick refs: `tmux new -d -s shell`, `tmux attach -t shell`, `tmux list-sessions`, `tmux kill-session -t shell`.
 
 ## Human-Facing Text
-- Blogs, websites, work docs, emails, any public/reader-facing prose :Read `VOICE.md` and follow it
+- Read `~/GitHub/agent-scripts/VOICE.md`
+- Blogs, websites, work docs, emails, any public/reader-facing prose and follow it
 - Strip AI patterns (significance inflation, -ing analyses, em dash overuse, sycophancy, filler, hedging, emoji, bold-header lists, curly quotes, generic conclusions).
 - Two-pass: draft rewrite → "what's still obviously AI?" audit → final version.
 - Preserve meaning + tone; add voice/personality; vary rhythm.
