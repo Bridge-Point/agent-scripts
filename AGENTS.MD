@@ -5,9 +5,9 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Agent Protocol
 - Contact: Nick Kemp (@kempnz, nick@bridgepoint.co.nz).
-- Workspace: `~/GitHub`. Missing kempnz repo: clone `https://github.com/kempnz/<repo>.git`.
+- Workspace: `~/GitHub`. Missing kempnz repo: clone `https://github.com/kempnz/<repo>.git` or `https://github.com/Bridge-Point/<repo>.git`
 - 3rd-party/OSS: clone under `~/GitHub/oss`.
-- "MacBook" => SSH there; find hosts/IPs via `tailscale status`.
+- "mini" => SSH there; find hosts/IPs via `tailscale status`.
 - Files: repo or `~/GitHub/agent-scripts`.
 - PRs: use `gh pr view/diff` (no URLs).
 - "Make a note" => edit AGENTS.md (shortcut; not a blocker).
@@ -64,9 +64,11 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Language/Stack Notes
 - TypeScript: use repo PM; keep files small; follow existing patterns.
+- Go: use Go modules; keep packages focused and files small; follow existing project structure and idiomatic Go conventions (gofmt, simple interfaces, explicit errors).
 
 ## Critical Thinking
 - Fix root cause (not band-aid).
+- Do not take quick shortcuts, follow code base convention
 - Unsure: read more code; if still stuck, ask w/ short options.
 - Conflicts: call out; pick safer path.
 - Unrecognized changes: assume other agent; keep going; focus your changes. If it causes issues, stop + ask user.
@@ -88,13 +90,14 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Quick refs: `tmux new -d -s shell`, `tmux attach -t shell`, `tmux list-sessions`, `tmux kill-session -t shell`.
 
 ## Human-Facing Text
-- Blogs, websites, work docs, emails, any public/reader-facing prose: run through **humanizer** skill (`~/.claude/skills/humanizer/SKILL.md`).
+- Blogs, websites, work docs, emails, any public/reader-facing prose :Read `VOICE.md` and follow it
 - Strip AI patterns (significance inflation, -ing analyses, em dash overuse, sycophancy, filler, hedging, emoji, bold-header lists, curly quotes, generic conclusions).
 - Two-pass: draft rewrite → "what's still obviously AI?" audit → final version.
 - Preserve meaning + tone; add voice/personality; vary rhythm.
 
 <frontend_aesthetics>
 Avoid "AI slop" UI. Be opinionated + distinctive.
+Prefer shadcn components
 
 Do:
 - Typography: pick a real font; avoid Inter/Roboto/Arial/system defaults.
